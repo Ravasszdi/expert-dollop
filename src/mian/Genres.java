@@ -9,5 +9,5 @@ package mian;
  * @author HarasztiMihály(SZF_N
  */
 public enum Genres {
-    
+    UNKNOWN,    //0
 }
