@@ -4,6 +4,9 @@
  */
 package mian;
 
+import modell.Films;
+import view.ConsolView;
+
 /**
  *
  * @author HarasztiMihály(SZF_N
@@ -14,7 +17,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        new ConsolView(new Films(films)).view();
     }
     
 }
