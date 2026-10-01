@@ -4,8 +4,12 @@
  */
 package mian;
 
+import java.util.ArrayList;
+import java.util.List;
 import modell.Films;
+import modell.Film;
 import view.ConsolView;
+import view.TableView;
 
 /**
  *
@@ -17,7 +21,11 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new ConsolView(new Films(films)).view();
+        Film[] list = {
+            new Film(),
+            new Film()
+        };
+        new TableView(new Films(list)).view();
     }
     
 }

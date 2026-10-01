@@ -16,8 +16,8 @@ import java.util.List;
 public class Films {
     private ArrayList<Film> films;
 
-    public Films(ArrayList<Film> films) {
-        this.films = films;
+    public Films(Film[] films) {
+        this.films = new ArrayList<Film>(List.of(films));
     }
     
     public void addFilm(Film film){

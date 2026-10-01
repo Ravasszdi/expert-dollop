@@ -20,6 +20,7 @@ public class Film {
     }
 
     public Film() {
+        this("A Minecraft Movei", 101.0f, Genres.ADVENTURA);
     }
 
     public String getName() {
