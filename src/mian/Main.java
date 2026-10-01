@@ -9,6 +9,7 @@ import java.util.List;
 import modell.Films;
 import modell.Film;
 import view.ConsolView;
+import view.HtmlView;
 import view.TableView;
 
 /**
@@ -25,7 +26,7 @@ public class Main {
             new Film(),
             new Film()
         };
-        new TableView(new Films(list)).view();
+        new HtmlView(new Films(list)).view();
     }
     
 }
