@@ -11,12 +11,12 @@ package modell;
 public class Film {
     private String name;
     private float runTimeMin;
-    private Genres genres;
+    private Genres genre;
 
     public Film(String name, float runTimeMin, Genres genres) {
         this.name = name;
         this.runTimeMin = runTimeMin;
-        this.genres = genres;
+        this.genre = genres;
     }
 
     public Film() {
@@ -32,16 +32,16 @@ public class Film {
     }
 
     public Genres getGenres() {
-        return genres;
+        return genre;
     }
 
     public void setGenres(Genres genres) {
-        this.genres = genres;
+        this.genre = genres;
     }
 
     @Override
     public String toString() {
-        return "Film{" + "name=" + name + ", runTimeMin=" + runTimeMin + ", genres=" + genres + '}';
+        return "Film{" + "name=" + name + ", runTimeMin=" + runTimeMin + ", genres=" + genre + '}';
     }
     
     

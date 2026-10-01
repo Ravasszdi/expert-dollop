@@ -27,23 +27,23 @@ public class HtmlView {
         String html_frame = "<!DOCTYPE html>\n"
                 + "<html lang=\"hu\">\n"
                 + "<head>\n"
-                + "    <meta charset=\"UTF-8\">\n"
-                + "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
-                + "    <title>Veiw</title>\n"
+                + "<meta charset=\"UTF-8\">\n"
+                + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+                + "<title>Veiw</title>\n"
                 + "</head>\n"
                 + "<body>\n"
                 + "%s\n"
                 + "</body>\n"
                 + "</html>";
         
-        String table = "    <table>\n"
-                + "        <tr>\n"
-                + "            <th>Name</th>\n"
-                + "            <th>RunTime</th>\n"
-                + "            <th>Genre</th>\n"
-                + "        </tr>\n"
-                + "        %s\n"
-                + "    </table>";
+        String table = "<table>\n"
+                + "<tr>\n"
+                + "<th>Name</th>\n"
+                + "<th>RunTime</th>\n"
+                + "<th>Genre</th>\n"
+                + "</tr>\n"
+                + "%s\n"
+                + "</table>";
         
         String table_content = "";
         for (Film film : this.modell.getFilms()) {
